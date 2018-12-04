@@ -22,7 +22,9 @@ export default {
   },
   mounted() {
     setInterval(() => {
-      document.querySelector("#svg-js-logo").style.fill = genColor();
+      if (process.env.NODE_ENV != "test") {
+        document.querySelector("#svg-js-logo").style.fill = genColor();
+      }
     }, 1000);
   }
 };

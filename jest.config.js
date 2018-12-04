@@ -1,4 +1,8 @@
 module.exports = {
+  collectCoverage: true,
+  coverageReporters: [
+    "lcov"
+  ],
   moduleFileExtensions: [
     'js',
     'jsx',
